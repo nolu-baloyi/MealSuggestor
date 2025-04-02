@@ -4,52 +4,55 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@color/teal_700">
+    android:background="@drawable/img">
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/MealSuggestor"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Meal Suggester"
+        android:text="@string/meal_suggestor"
         android:textSize="24sp"
         android:textStyle="bold"
         android:paddingBottom="19dp"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edit_text_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter time (Morning, Mid-morning, Afternoon, Dinner)"
+        android:autofillHints=""
+        android:hint="@string/enter_time_morning_mid_morning_afternoon_dinner"
         android:ems="10"
         android:inputType="text"
-        android:text="Enter your name" />
+        android:text="@string/enter_your_name"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/GetMealSuggestionButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:textColor="@color/black"
-        android:text="Get Meal Suggestion"
-        android:textSize="16dp"/>
+        android:text="@string/get_meal_suggestion"
+        android:textSize="16sp"/>
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/MealAppearance"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your meal will appear here"
-        android:textColor="@color/black"
+        android:text="@string/your_meal_will_appear_here"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:textSize="18sp"
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/resetButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Reset"
+        android:text="@string/reset"
         android:textStyle="bold"
-        android:textSize="18dp"/>
+        android:textSize="18sp"/>
 </LinearLayout>
